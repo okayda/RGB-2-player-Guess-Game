@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon_rgb.png">
+    <title>RGB Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="score">
+        <h1 class="Player_1">Player-1</h1>
+        <h1><span class="score-1">0</span>/<span class="MaxScore_1"></span></h1>
+        <h1 class="mid_score">Score</h1>
+        <h1><span class="score-2">0</span>/<span class="MaxScore_2"></span></h1>
+        <h1 class="Player_2">Player-2</h1>
+    </div>
+
+    <div class="RGB">
+        <h1 class="Guess"></h1>
+    </div>
+
+    <div class="wrapper__container">
+
+        <div class="wrapper__flex">
+
+            <div class="wrapper-1">
+                <div class="color-1"><span class="letter_1">Y</span></div>
+                <div class="color-1"><span class="letter_1">O</span></div>
+                <div class="color-1"><span class="letter_1">U</span></div>
+                <div class="color-1"><span class="letter_1">W</span></div>
+                <div class="color-1"><span class="letter_1">I</span></div>
+                <div class="color-1"><span class="letter_1">N</span></div>
+
+            </div>
+
+            <div class="btn_grid">
+                <div>
+                    <button class="Reset">Reset</button>
+                </div>
+                <div>
+                    <button class="Change">Change Score</button>
+                </div>
+                <div>
+                    <button class="Theme">Dark Theme</button>
+
+                </div>
+            </div>
+
+            <div class="wrapper-2">
+                <div class="color-2"><span class="letter_2">Y</span></div>
+                <div class="color-2"><span class="letter_2">O</span></div>
+                <div class="color-2"><span class="letter_2">U</span></div>
+                <div class="color-2"><span class="letter_2">W</span></div>
+                <div class="color-2"><span class="letter_2">I</span></div>
+                <div class="color-2"><span class="letter_2">N</span></div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="backdrop"></div>
+
+    <div class="modal_container animated">
+        <div class="border_width">
+            <span class="exit">X</span>
+            <h1 class="modal_title">How to play</h1>
+        </div>
+        <div class="flex">
+            <img src="example.PNG" class="img_ex" alt="">
+            <p class="para">Each player have a 6 RGB one of the 6 RGB contain one right RGB color so they will use
+                the hint above the card to guess what is the Right RGB color if they choose the color correctly without
+                clicking another cards they will get <br><strong>10 Points</strong> each RGB contain -3 points except to
+                the Right color, after they click the Right color all the RGB you click only not match in the hint
+                will minus to your score after that your turn will change to the second player. </p>
+
+            <div class="player_input">
+                <form action="">
+                    <label for="">First Player Name</label>
+                    <input type="text" class="input_1">
+                    <br>
+
+                    <label for="">Second Player Name</label>
+                    <input type="text" class="input_2">
+                    <br>
+
+                    <label for="">Max Score</label>
+                    <br>
+                    <input type="number" class="input_3" value="20">
+                </form>
+                <button type="button" class="form_btn">Let's Play</button>
+            </div>
+
+            <div class="modal_btn">
+                <button class="">Next</button>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
